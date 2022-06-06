@@ -171,8 +171,11 @@ class MemberRepositoryTest {
 
         Optional<Member> findMemberOptional = memberRepository.findOptionalByUsername("asdas");
         System.out.println("findMemberOptional = " + findMemberOptional);
+    }
 
-
+    @Test
+    public void callCustom() {
+        List<Member> result = memberRepository.findMemberCustom();
     }
 
 }
